@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ["asset20.ckassets.com"],
   },
-    output:"standalone"
+  output: "standalone",
 };
 
 export default nextConfig;

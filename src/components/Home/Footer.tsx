@@ -22,12 +22,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="text-sm space-y-2">
               <li>
-                <Link href="/terms">
+                <Link href="/terms-condition">
                   <p className="hover:underline">Terms and Conditions</p>
                 </Link>
               </li>
               <li>
-                <Link href="/privacy">
+                <Link href="/">
                   <p className="hover:underline">Privacy Policy</p>
                 </Link>
               </li>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="/contact-us">
                   <p className="hover:underline">Contact Us</p>
                 </Link>
               </li>
@@ -67,7 +67,7 @@ const Footer = () => {
                 className="hover:text-gray-400"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin size={30}/>
+                <FaLinkedin size={30} />
               </a>
             </div>
           </div>
