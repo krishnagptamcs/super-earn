@@ -2,16 +2,31 @@ import Image from "next/image";
 import { auth } from "@clerk/nextjs/server";
 import React from "react";
 import Button from "./Button";
+import { popularCategories } from "@/data/brand";
 
-const Description = ({ data }: { data: any }) => {
+const Description = ({ data, p_id }: { data: any; p_id: string }) => {
   const { userId } = auth();
-  
+  // console.log("p_id", p_id);
+
+  // console.log("data", data);
+
   // Modify the short_description to include line breaks after specific tags and replace "CashKaro" with "Super Earn"
   const modifiedShortDescription = data?.attributes?.short_description
     ?.replace(/<\/em>/g, "</em><br>")
     ?.replace(/<\/span>/g, "</span><br>")
     ?.replace(/<\/strong>/g, "</strong><br>")
     ?.replace(/CashKaro/g, "Super Earn");
+
+  // Function to find the matching category based on p_id
+  const findWebsite = (id: string) => {
+    const cleanedId = id;
+    const category = popularCategories.find(
+      (category) => category.link.replace(/\//g, "") === cleanedId
+    );
+    return category ? category.website : "";
+  };
+
+  const website = findWebsite(p_id);
 
   return (
     <>
@@ -52,7 +67,11 @@ const Description = ({ data }: { data: any }) => {
             />
           </div>
 
-          <Button btnData={data?.attributes} user={userId} />
+          <Button
+            btnData={data?.attributes}
+            user={userId}
+            website_link={website}
+          />
         </div>
       </section>
     </>

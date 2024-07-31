@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary-mainBlue text-white py-8">
+      <footer className="bg-gray-800  py-8 text-white/50">
         <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">About Us</h4>
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com"
-                className="hover:text-gray-400"
+                className=" hover:scale-125 transition-all delay-75 hover:text-[#3b5998]"
                 aria-label="Facebook"
               >
                 <FaFacebook size={30} />
@@ -57,14 +57,14 @@ const Footer = () => {
 
               <a
                 href="https://instagram.com"
-                className="hover:text-gray-400"
+                className=" hover:scale-125 transition-all delay-75 hover:text-[#E1306C]"
                 aria-label="Instagram"
               >
                 <AiFillInstagram size={30} />
               </a>
               <a
                 href="https://linkedin.com"
-                className="hover:text-gray-400"
+                className="hover:scale-125 transition-all delay-75 hover:text-[#0072b1]"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin size={30} />

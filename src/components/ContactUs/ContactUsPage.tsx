@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "emailjs-com";
 import Image from "next/image";
 import contact_us from "../../../public/assets/contact-us.jpg";
+import toast from "react-hot-toast";
 
 const serviceID = "service_mv58jld";
 const templateID = "template_mwbs5tr";
@@ -31,6 +32,7 @@ const ContactUsPage = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormValues>({
     resolver: zodResolver(contactSchema),
   });
@@ -45,7 +47,8 @@ const ContactUsPage = () => {
     };
     try {
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
-      alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
+      reset(); // Clear the form
     } catch (error) {
       console.error("Failed to send message:", error);
       alert("Failed to send message. Please try again.");
@@ -149,7 +152,14 @@ const ContactUsPage = () => {
 
           <div className="w-[50%] p-8">
             <div className="w-full h-full">
-              <Image alt="const us" src={contact_us} width={100} height={100} className="w-full h-full object-cover rounded-3xl" unoptimized />
+              <Image
+                alt="const us"
+                src={contact_us}
+                width={100}
+                height={100}
+                className="w-full h-full object-cover rounded-3xl"
+                unoptimized
+              />
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
 
           {/* Tabs  */}
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 font-semibold">
             <Link
               href={"/"}
               className="hover:border-b-2 pb-p[1px] border-white"

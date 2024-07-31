@@ -7,7 +7,7 @@ const Refer = () => {
     <>
       <section className="w-11/12 mx-auto space-y-4">
         <h1 className="text-3xl font-semibold text-center">
-          Refer Friends & Earn Forever
+          Refer Friends & <span className="text-blue-600">Earn</span> Forever
         </h1>
 
         {/* categories icons */}

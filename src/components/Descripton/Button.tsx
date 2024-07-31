@@ -2,10 +2,18 @@
 import React from "react";
 import toast from "react-hot-toast";
 
-const Button = ({ btnData, user }: { btnData: any; user: any }) => {
+const Button = ({
+  btnData,
+  user,
+  website_link,
+}: {
+  btnData: any;
+  user: any;
+  website_link: string;
+}) => {
   const verfiyHandler = () => {
     if (user) {
-      window.open(btnData?.cashback_url);
+      window.open(website_link);
     } else {
       toast.error("Please Login ! To grab this offer");
     }

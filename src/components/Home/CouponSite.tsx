@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import cb from "../../../public/assets/cashback.jpg";
+import cb from "../../../public/assets/cashback_1.avif";
 
 const CouponSite = () => {
   return (
     <>
       <section className="w-11/12 mx-auto">
         <h1 className="text-3xl font-semibold text-center">
-          India&apos;s Best Cashback & Coupons Site
+          India&apos;s Best Cashback & <span className="text-blue-600">Coupons Site</span>
         </h1>
 
         {/* categories icons */}
@@ -26,7 +26,7 @@ const CouponSite = () => {
 
           {/* images */}
           <div className="w-[30%]">
-            <Image alt="cashback" src={cb} unoptimized className="rounded-md  w-60 aspect-square " />
+            <Image alt="cashback" src={cb} unoptimized className="rounded-full w-56 aspect-square " />
           </div>
         </div>
       </section>

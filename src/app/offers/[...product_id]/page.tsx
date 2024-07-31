@@ -21,7 +21,7 @@ const page = async ({ params }: { params: { product_id: string } }) => {
 
   return (
     <div>
-      <Description data={data} />
+      <Description data={data} p_id={params.product_id[0]} />
     </div>
   );
 };
