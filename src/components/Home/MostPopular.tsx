@@ -15,7 +15,7 @@ const MostPopular = () => {
           {popularCategories.map((item, index) => (
             <Link
               href={`/offers/${item.link}`}
-              className="p-3 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-none transition-all flex flex-col items-center justify-center gap-3"
+              className="p-3 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-2 hover:border-blue-500 hover:shadow-none transition-all flex flex-col items-center justify-center gap-3"
               key={index}
             >
               <Image
@@ -23,6 +23,7 @@ const MostPopular = () => {
                 width={100}
                 height={100}
                 src={item.image}
+                className="w-32 h-24 "
                 unoptimized
               />
               <p>{item.title}</p>
