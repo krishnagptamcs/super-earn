@@ -1,9 +1,9 @@
-import user1 from "../../public/profile pic/32.jpg"
+import user1 from "../../public/profile pic/22.jpg"
 import user2 from "../../public/profile pic/48.jpg"
-import user3 from "../../public/profile pic/68.jpg"
+import user3 from "../../public/profile pic/65.jpg"
 import user4 from "../../public/profile pic/69.jpg"
 import user5 from "../../public/profile pic/77.jpg"
-import user6 from "../../public/profile pic/81.jpg"
+import user6 from "../../public/profile pic/56.jpg"
 
 
 

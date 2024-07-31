@@ -2,6 +2,8 @@ import { UserButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 import React from "react";
+import superear_logo from "../../../public/company_logo/superearn-high-resolution-logo-black-transparent.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const { userId } = auth();
@@ -10,9 +12,9 @@ const Navbar = () => {
       <nav className="bg-primary-mainBlue p-2 lg:p-4">
         <div className="w-11/12 mx-auto flex items-center justify-between">
           {/* logo */}
-          <div>
-            <p>logo</p>
-          </div>
+          <Link href={"/"} className="w-44 aspect-auto">
+            <Image src={superear_logo} alt="super earn" />
+          </Link>
 
           {/* Tabs  */}
 

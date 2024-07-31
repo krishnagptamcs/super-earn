@@ -3,14 +3,18 @@ import CopyRight from "./CopyRight";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import superear_logo from "../../../public/company_logo/superearn-high-resolution-logo-black-transparent.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <>
       <footer className="bg-gray-800  py-8 text-white/50">
         <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="text-lg font-semibold mb-4">About Us</h4>
+          <div className="space-y-3">
+          <Link href={"/"} className="">
+            <Image src={superear_logo} alt="super earn" className="w-40 fill-white"/>
+          </Link>
             <p className="text-sm">
               We are a company dedicated to providing the best services in the
               industry. Our mission is to enhance the quality of life for our

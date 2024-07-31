@@ -53,6 +53,11 @@ const MostPopular = () => {
                     className="w-40 aspect-square"
                     unoptimized
                   />
+
+                  <button className="tailwind-style">
+                    {item.savings}
+                    <span className="shine"></span>
+                  </button>
                   <p className="font-medium">{item.title}</p>
                 </Link>
               </SwiperSlide>

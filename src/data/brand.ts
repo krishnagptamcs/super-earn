@@ -21,6 +21,7 @@ export const popularCategories = [
     image: myntra,
     type: "fashion",
     website: "https://www.myntra.com/",
+    savings: "Earn upto 6% ",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const popularCategories = [
     image: ajio,
     type: "fashion",
     website: "https://www.ajio.com/",
+    savings: "Earn upto 4% ",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ export const popularCategories = [
     image: borosil,
     type: "electronics",
     website: "https://myborosil.com/",
+    savings: "Earn upto 15% ",
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ export const popularCategories = [
     image: au,
     type: "banking",
     website: "https://www.aubank.in/",
+    savings: "Earn upto 6% ",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ export const popularCategories = [
     image: levis,
     type: "fashion",
     website: "https://levi.in/",
+    savings: "Earn upto 4% ",
   },
   {
     id: 6,
@@ -61,6 +66,7 @@ export const popularCategories = [
     image: boat,
     type: "electronics",
     website: "https://www.boat-lifestyle.com/",
+    savings: "Earn upto 6% ",
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const popularCategories = [
     image: croma,
     type: "electronics",
     website: "https://www.croma.com/",
+    savings: "Earn upto 3% ",
   },
   {
     id: 8,
@@ -77,6 +84,7 @@ export const popularCategories = [
     image: medibuddy,
     type: "health",
     website: "https://www.medibuddy.in/",
+    savings: "Earn upto 4% ",
   },
   {
     id: 9,
@@ -85,6 +93,7 @@ export const popularCategories = [
     image: oneplus,
     type: "mobiles",
     website: "https://www.oneplus.in/",
+    savings: "Earn upto 1% ",
   },
   {
     id: 10,
@@ -92,6 +101,7 @@ export const popularCategories = [
     link: "/beardo-coupons",
     image: beardo,
     website: "https://beardo.in/",
+    savings: "Earn upto 4% ",
   },
   {
     id: 11,
@@ -100,6 +110,7 @@ export const popularCategories = [
     image: mama_earth,
     type: "beauty",
     website: "https://mamaearth.in/",
+    savings: "Earn upto 18% ",
   },
   {
     id: 12,
@@ -108,6 +119,7 @@ export const popularCategories = [
     image: zandu,
     type: "health",
     website: "https://zanducare.com/",
+    savings: "Earn upto 6% ",
   },
   {
     id: 13,
@@ -116,6 +128,7 @@ export const popularCategories = [
     image: nyka,
     type: "beauty",
     website: "https://www.nykaa.com/",
+    savings: "Earn upto 3% ",
   },
   {
     id: 14,
@@ -124,5 +137,6 @@ export const popularCategories = [
     image: ustra,
     type: "beauty",
     website: "https://www.ustraa.com/",
+    savings: "Earn upto 18% ",
   },
 ];
