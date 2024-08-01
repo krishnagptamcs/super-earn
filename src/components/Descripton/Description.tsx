@@ -6,9 +6,6 @@ import { popularCategories } from "@/data/brand";
 
 const Description = ({ data, p_id }: { data: any; p_id: string }) => {
   const { userId } = auth();
-  // console.log("p_id", p_id);
-
-  // console.log("data", data);
 
   // Modify the short_description to include line breaks after specific tags and replace "CashKaro" with "Super Earn"
   const modifiedShortDescription = data?.attributes?.short_description
@@ -16,6 +13,9 @@ const Description = ({ data, p_id }: { data: any; p_id: string }) => {
     ?.replace(/<\/span>/g, "</span><br>")
     ?.replace(/<\/strong>/g, "</strong><br>")
     ?.replace(/CashKaro/g, "Super Earn");
+
+  // Modify the seo_description to replace "CashKaro" with "Super Earn"
+  const modifiedSeoDescription = data?.attributes?.seo_description?.replace(/CashKaro/g, "SuperEarn");
 
   // Function to find the matching category based on p_id
   const findWebsite = (id: string) => {
@@ -53,7 +53,7 @@ const Description = ({ data, p_id }: { data: any; p_id: string }) => {
             {/* description */}
             <div className="w-7/12 mx-auto">
               <p className="text-center italic tracking-tight">
-                {data?.attributes?.seo_description}
+                {modifiedSeoDescription}
               </p>
             </div>
           </div>
